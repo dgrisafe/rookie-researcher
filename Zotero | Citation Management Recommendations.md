@@ -1,3 +1,5 @@
+# Zotero | Citation Management Recommendations
+
 Zotero is a citation management software that is free, relatively easy to use, and eliminates many frustrating aspects of proprietary bibliographic software. At the end of the day using Zotero is somewhat of a preference; there are many other citation software out there. I have found the Zotero workflow to be the simplest and most affordable option.
 
 The [Zotero web browser extensions/connectors](https://www.zotero.org/download/connectors) is useful while browsing the internet to quickly import a reference into your library. Click the Zotero button in the upper right corner of the browser while visiting a webpage on [PubMed](https://pubmed.ncbi.nlm.nih.gov/) or a specific [journal publication](https://onlinelibrary.wiley.com/doi/10.1111/add.16127) to load the bibliographic citation data into Zotero. This also works on popular websites like [Google Books](https://www.google.com/books/edition/_/PoclDwAAQBAJ) and [Amazon](https://a.co/d/f2DBdAt).
@@ -20,12 +22,12 @@ I have placed my Zotero library on my personal Dropbox server so I can read the 
 
 ## References on Zotero in the MLA 9th Edition style
 
-Heyns, Emiliano. “Better BibTeX for Zotero.” Retorquere on GitHub, https://retorque.re/zotero-better-bibtex/. Accessed 26 Jan. 2023.
-Kashnitsky, Ilya. “Zotero Hacks: Unlimited Synced Storage and Its Smooth Use with Rmarkdown.” Ilya Kashnitsky, 14 Mar. 2019, https://ikashnitsky.github.io/2019/zotero/.
-“Zotero | Connectors.” Zotero Documentation, https://www.zotero.org/download/connectors. Accessed 26 Jan. 2023.
-“Zotero | Style Repository.” Zotero Documentation, https://www.zotero.org/styles. Accessed 26 Jan. 2023.
-“Zotero | Word Processor Plugins.” Zotero Documentation, https://www.zotero.org/support/word_processor_integration. Accessed 26 Jan. 2023.
-Zotero | Your Personal Research Assistant. Corporation for Digital Scholarship, https://www.zotero.org/. Accessed 30 Jan. 2023.
+Heyns, Emiliano. “Better BibTeX for Zotero.” Retorquere on GitHub, https://retorque.re/zotero-better-bibtex/. Accessed 26 Jan. 2023.  
+Kashnitsky, Ilya. “Zotero Hacks: Unlimited Synced Storage and Its Smooth Use with Rmarkdown.” Ilya Kashnitsky, 14 Mar. 2019, https://ikashnitsky.github.io/2019/zotero/.  
+“Zotero | Connectors.” Zotero Documentation, https://www.zotero.org/download/connectors. Accessed 26 Jan. 2023.  
+“Zotero | Style Repository.” Zotero Documentation, https://www.zotero.org/styles. Accessed 26 Jan. 2023.  
+“Zotero | Word Processor Plugins.” Zotero Documentation, https://www.zotero.org/support/word_processor_integration. Accessed 26 Jan. 2023.  
+Zotero | Your Personal Research Assistant. Corporation for Digital Scholarship, https://www.zotero.org/. Accessed 30 Jan. 2023.  
 
 
 ## References on Alcohol Use Disorder in JAMA style
