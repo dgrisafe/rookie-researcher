@@ -1,2 +1,2 @@
 # rookie-researcher
-Introductory skills for clinical research tools
+Introductory skills for clinical research
