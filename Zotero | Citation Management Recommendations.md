@@ -8,7 +8,7 @@ Zotero has a [repository of style files](https://www.zotero.org/styles) that exp
 
 The [Zotero MS Word plugin](https://www.zotero.org/support/word_processor_integration) is useful for inserting citations throughout a Word document and automatically creating a bibliography at the end of the manuscript. 
 
-[Better BibTeX](https://retorque.re/zotero-better-bibtex/) is an extension for Zotero (and Juris-M) that makes it easier to manage bibliographic data and share a large number of manuscripts with collaborators. Files with .bib extensions can be obtained from Zotero by exporting a group of manuscripts, sharing the .bib file with collaborators, and they can import the references into their personal Zotero libraries. I have included two examples of these .bib files on [Zotero]() and [Alcohol Use Disorder]().
+[Better BibTeX](https://retorque.re/zotero-better-bibtex/) is an extension for Zotero (and Juris-M) that makes it easier to manage bibliographic data and share a large number of manuscripts with collaborators. Files with .bib extensions can be obtained from Zotero by exporting a group of manuscripts, sharing the .bib file with collaborators, and they can import the references into their personal Zotero libraries. I have included two examples of these .bib files on [Zotero](https://github.com/dgrisafe/rookie-researcher/blob/main/zotero_software.bib) and [Alcohol Use Disorder](https://github.com/dgrisafe/rookie-researcher/blob/main/zotero_alcohol.bib).
 
 I have placed my Zotero library on my personal Dropbox server so I can read the PDFs associated with my library on the go. This is more advanced, but can be done my following [Ilya Kashnitsky's blog post](https://ikashnitsky.github.io/2019/zotero/).
 
