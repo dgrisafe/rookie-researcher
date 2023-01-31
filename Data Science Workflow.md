@@ -22,7 +22,9 @@ This data folder has varying utility, as often data is protected in a database t
 
 ## `1 Programs`
 
-I keep my R scripts in this folder. I like to have one R Markdown (RMd) file for data wrangling/cleaning and another RMd for analysis. I also "abstract" or separate chunks of R code into individual .R files that I run from within the RMd files using the function `source()`.  
+I often create a shortcut/alias with this name that links to the specific repository within my GitHub folder in my Documents on my local computer. I use [GitHub](https://github.com/dgrisafe/rookie-researcher/blob/main/Git%20and%20GitHub.md) to manage all my code.
+
+I like to have one R Markdown (RMd) file for data wrangling/cleaning and another RMd for analysis. I also ["abstract"](https://en.wikipedia.org/wiki/Abstraction_principle_(computer_programming)) or separate chunks of R code into individual .R files that I run from within the RMd files using the function [`source()`](https://bookdown.org/yihui/rmarkdown-cookbook/source-script.html).
 
 
 ## `2 Media`
