@@ -4,7 +4,7 @@ Git and GitHub are used often in programming.
 
 More has been written on these topics than I ever could. Here are some great resources to start using Git in R.
 
-## Intro Video to Git: Alice Bartlett
+## [Intro Video to Git](https://www.youtube.com/watch?v=eWxxfttcMts): Alice Bartlett
 
 [![](https://avatars.githubusercontent.com/u/68009?v=4)](https://www.youtube.com/watch?v=eWxxfttcMts "Git for Humans – Alice Bartlett at UX Brighton 2016")
 
@@ -33,9 +33,10 @@ She notes that jargon in Git makes it inaccessible to new users. She provides th
 > | Push | send commits to a remote |
 > | Pull | get commits from a remote |
 
-## How to Use Git/GitHub with R
 
-Getting started with Git in R has a bit of a learning curve. There are some nuts-and-bolts that must be tended to before integrating Git with R. Thankfully Dave has posted an excellent walkthrough for Git in RStudio that covers the following:
+## [How to Use Git/GitHub with R](https://rfortherestofus.com/2021/02/how-to-use-git-github-with-r/): Dave
+
+Getting started with Git in R has a bit of a learning curve. There are some nuts-and-bolts that must be tended to before integrating Git with R. Thankfully Dave has posted an excellent walkthrough for Git in RStudio. He uses the [usethis](https://cran.r-project.org/web/packages/usethis/index.html) R package to cover the following:
 
 * Installing Git
 * Configuring Git
