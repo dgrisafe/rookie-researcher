@@ -1,6 +1,6 @@
 # Zotero | Citation Management Recommendations
 
-Zotero is a citation management software that is free, relatively easy to use, and eliminates many frustrating aspects of proprietary bibliographic software. At the end of the day using Zotero is somewhat of a preference; there are many other citation software out there. I have found the Zotero workflow to be the simplest and most affordable option.
+[Zotero](https://www.zotero.org/) is a citation management software that is free, relatively easy to use, and eliminates many frustrating aspects of proprietary bibliographic software. At the end of the day using Zotero is somewhat of a preference; there are many other citation software out there. I have found the Zotero workflow to be the simplest and most affordable option.
 
 The [Zotero web browser extensions/connectors](https://www.zotero.org/download/connectors) is useful while browsing the internet to quickly import a reference into your library. Click the Zotero button in the upper right corner of the browser while visiting a webpage on [PubMed](https://pubmed.ncbi.nlm.nih.gov/) or a specific [journal publication](https://onlinelibrary.wiley.com/doi/10.1111/add.16127) to load the bibliographic citation data into Zotero. This also works on popular websites like [Google Books](https://www.google.com/books/edition/_/PoclDwAAQBAJ) and [Amazon](https://a.co/d/f2DBdAt).
 
@@ -8,7 +8,9 @@ Zotero has a [repository of style files](https://www.zotero.org/styles) that exp
 
 The [Zotero MS Word plugin](https://www.zotero.org/support/word_processor_integration) is useful for inserting citations throughout a Word document and automatically creating a bibliography at the end of the manuscript. 
 
-[Better BibTeX](https://retorque.re/zotero-better-bibtex/) is an extension for Zotero (and Juris-M) that makes it easier to manage bibliographic data and share a large number of manuscripts with collaborators. Files with .bib extensions can be obtained from Zotero by exporting a group of manuscripts, shared with collaborators, and then imported into their personal Zotero libraries.
+[Better BibTeX](https://retorque.re/zotero-better-bibtex/) is an extension for Zotero (and Juris-M) that makes it easier to manage bibliographic data and share a large number of manuscripts with collaborators. Files with .bib extensions can be obtained from Zotero by exporting a group of manuscripts, sharing the .bib file with collaborators, and they can import the references into their personal Zotero libraries. I have included two examples of these .bib files on [Zotero]() and [Alcohol Use Disorder]().
+
+I have placed my Zotero library on my personal Dropbox server so I can read the PDFs associated with my library on the go. This is more advanced, but can be done my following [Ilya Kashnitsky's blog post](https://ikashnitsky.github.io/2019/zotero/).
 
 Below are examples of various exported bibliographies in various styles, which can be quickly modified to fit the preferences for any given journal, collaborator, assignment, etc. To do this: 
 
@@ -16,8 +18,6 @@ Below are examples of various exported bibliographies in various styles, which c
 * Right click, export
 * Choose citation style, copy bibliography to the clipboard
 * Paste it anywhere as html: email, website, etc.
-
-I have placed my Zotero library on my personal Dropbox server so I can read the PDFs associated with my library on the go. This is more advanced, but can be done my following [Ilya Kashnitsky's blog post](https://ikashnitsky.github.io/2019/zotero/)
 
 
 ## References on Zotero in the MLA 9th Edition style
