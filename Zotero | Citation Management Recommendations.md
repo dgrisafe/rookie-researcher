@@ -1,6 +1,6 @@
 # Zotero | Citation Management Recommendations
 
-[Zotero](https://www.zotero.org/) is a citation management software that is free, relatively easy to use, and eliminates many frustrating aspects of proprietary bibliographic software. At the end of the day using Zotero is somewhat of a preference; there are many other citation software out there. I have found the Zotero workflow to be the simplest and most affordable option.
+[Zotero](https://www.zotero.org/) is a citation management software that is free, relatively easy to use, and eliminates many frustrating aspects of proprietary bibliographic software. At the end of the day using Zotero is somewhat of a preference; there are many other citation software out there. I have found the Zotero workflow to be the simplest and most affordable option. It also integrates well into Rmd.
 
 The [Zotero web browser extensions/connectors](https://www.zotero.org/download/connectors) is useful while browsing the internet to quickly import a reference into your library. Click the Zotero button in the upper right corner of the browser while visiting a webpage on [PubMed](https://pubmed.ncbi.nlm.nih.gov/) or a specific [journal publication](https://onlinelibrary.wiley.com/doi/10.1111/add.16127) to load the bibliographic citation data into Zotero. This also works on popular websites like [Google Books](https://www.google.com/books/edition/_/PoclDwAAQBAJ) and [Amazon](https://a.co/d/f2DBdAt).
 
