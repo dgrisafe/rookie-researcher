@@ -17,7 +17,7 @@ Below are examples of various exported bibliographies in various styles, which c
 * Highlight selected references in Zotero
 * Right click, export
 * Choose citation style, copy bibliography to the clipboard
-* Paste it anywhere as html: email, website, etc.
+* Paste HTML anywhere: email, website, etc.
 
 
 ## References on Zotero in the MLA 9th Edition style
