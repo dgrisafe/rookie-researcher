@@ -31,3 +31,4 @@ Introductory skills for clinical research
 * [Rmd Cheatsheet](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)
 * [Outbreak Wrangling](https://github.com/dgrisafe/outbreak_wrangling)
 * Missing data: multiple imputation with chained equations (MICE)
+
