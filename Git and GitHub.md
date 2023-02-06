@@ -41,6 +41,8 @@ Getting started with Git in R has a bit of a learning curve. There are some nuts
 
 One strength of this approach is Git commits can be handled completely within RStudio; there is no need to use GitHub Desktop or other applications that must be downloaded.
 
+**If using a PC, download [Windows Terminal](https://aka.ms/terminal) developer tools from the Microsoft Store before continuing this walkthrough**
+
 Within RStudio, Dave uses the [usethis](https://cran.r-project.org/web/packages/usethis/index.html) R package to cover the following:
 
 * Installing Git
