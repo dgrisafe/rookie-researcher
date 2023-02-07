@@ -22,9 +22,88 @@ This data folder has varying utility, as often data is protected in a database t
 
 ## `1 Programs`
 
-I often create a shortcut/alias with this name that links to the specific repository within my GitHub folder in my Documents on my local computer. I use [GitHub](https://github.com/dgrisafe/rookie-researcher/blob/main/Git%20and%20GitHub.md) to manage all my code.
+I create a shortcut/alias with this name that links to the specific repository within my GitHub folder in my Documents on my local computer. I use [GitHub](https://github.com/dgrisafe/rookie-researcher/blob/main/Git%20and%20GitHub.md) to manage all my code.
 
-I like to have one R Markdown (RMd) file for data wrangling/cleaning and another RMd for analysis. I also ["abstract"](https://en.wikipedia.org/wiki/Abstraction_principle_(computer_programming)) or separate chunks of R code into individual .R files that I run from within the RMd files using the function [`source()`](https://bookdown.org/yihui/rmarkdown-cookbook/source-script.html).
+I create the following set of standard files when beginning a new project.
+
+* `.gitignore.R`
+* `directories.R`
+* `formats.R`
+* `data_wrangling.Rmd`
+* `analysis.Rmd`
+
+### `.gitignore.R`
+
+This hidden file tells R to ignore certain file types that are not necessary for reproducibility. In addition to the template files to ignore, I add lines to ignore all `.html` and `.pdf` files. I also ignore the `.Rproj` file. The asterisk tells Git to ignore any file with the following ending or suffix type.
+
+```
+.Rproj.user
+.Rhistory
+.Rdata
+.httr-oauth
+.DS_Store
+*.html
+*.pdf
+*.Rproj
+```
+
+### `!workflow.R`
+
+Think of this file as the *spine* of the project. Other files are the *ribs* that project of this main organizational file. This can also be thought of as the table of contents.
+
+I ["abstract"](https://en.wikipedia.org/wiki/Abstraction_principle_(computer_programming)) or separate additional `.R` scripts using the function [`source()`](https://bookdown.org/yihui/rmarkdown-cookbook/source-script.html) and `.Rmd` files using the function `rmarkdown::render()`. The latter function can then output the PDF or HTML reports into the folder `3 Reports`.
+
+Note, the file name begins with an exclamation point so it always floats to the top of the folder for ease of access.
+
+```
+# packages
+library(knitr)
+library(markdown)
+
+# R scripts for directories and formats
+source("directories.R")
+source("formats.R")
+
+# Rmd file and output for data wrangling
+rmarkdown::render(
+  input = paste0(dir_programs, "/data_wrangling.Rmd"),
+  output_format = "html_document",
+  output_dir = dir_reports
+  )
+  
+# Rmd file and output for data analysis
+rmarkdown::render(
+  input = paste0(dir_programs, "/data_analysis.Rmd"),
+  output_format = "html_document",
+  output_dir = dir_reports
+  )
+```
+
+### `directories.R`
+
+This simple R script assigns the directory locations of the folders that are called by the program files. I find having this in one dedicated file helps maintain organization.
+
+```
+# assigne directories
+dir_home <- "/Users/dgrisafe/Documents/rookie-researcher"
+dir_data <- paste0(dir_home, "/0 Data")
+dir_programs <- paste0(dir_home, "/1 Programs")
+dir_reports <- paste0(dir_home, "/3 Reports")
+```
+
+### `formats.R`
+
+Formats can become cluttered within the data wrangling .Rmd file. I separate out the formats, especially for factors, so I can quickly and consistently modify them throughout the project.
+
+### `data_wrangling.Rmd`
+
+Most of the time spent on data analysis seems to be cleaning it into a *tidy* dataset. Separating the wrangling code from the analysis helps maintain clarity.
+
+### `analysis.Rmd`
+
+This analysis file generates a .html or .pdf report. I use the `!workflow.R` file to tell R to output the analysis to the `3 Reports` folder. 
+
+Sometimes there are multiple analysis folders. For example, one for multiple imputation and another for epidemiological analysis.
 
 
 ## `2 Media`
