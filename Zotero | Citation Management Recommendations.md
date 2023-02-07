@@ -57,7 +57,7 @@ I have included two examples of these .bib files on [Zotero](https://github.com/
 I have placed my Zotero library on my personal Dropbox server so I can read the PDFs associated with my library on the go. This is more advanced, but can be done by following [Ilya Kashnitsky's blog post](https://ikashnitsky.github.io/2019/zotero/).
 
 
-## Example Citations
+## Example Bibliographies
 
 Below are examples of various exported bibliographies in various styles, which can be quickly modified to fit the preferences for any given journal, collaborator, assignment, etc. To do this: 
 
