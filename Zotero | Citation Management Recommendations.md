@@ -1,16 +1,63 @@
 # Zotero | Citation Management Recommendations
 
-[Zotero](https://www.zotero.org/) is a citation management software that is free, relatively easy to use, and eliminates many frustrating aspects of proprietary bibliographic software. At the end of the day using Zotero is somewhat of a preference; there are many other citation software out there. I have found the Zotero workflow to be the simplest and most affordable option. It also integrates well into Rmd.
+[Zotero](https://www.zotero.org/) is a citation management software that is free, relatively easy to use, and eliminates many frustrating aspects of proprietary bibliographic software. 
 
-The [Zotero web browser extensions/connectors](https://www.zotero.org/download/connectors) is useful while browsing the internet to quickly import a reference into your library. Click the Zotero button in the upper right corner of the browser while visiting a webpage on [PubMed](https://pubmed.ncbi.nlm.nih.gov/) or a specific [journal publication](https://onlinelibrary.wiley.com/doi/10.1111/add.16127) to load the bibliographic citation data into Zotero. This also works on popular websites like [Google Books](https://www.google.com/books/edition/_/PoclDwAAQBAJ) and [Amazon](https://a.co/d/f2DBdAt).
+At the end of the day using Zotero is somewhat of a preference; there are many other citation software out there. I have found the Zotero workflow to be the simplest and most affordable option. It also integrates well into RMarkdown.
 
-Zotero has a [repository of style files](https://www.zotero.org/styles) that export citations in a specific format. All citations of interest in Zotero can be placed in a folder and exported in any format (APA, MLA, Nature, etc.).
+
+## Get Free PDFs in Zotero
+
+The beauty of Zotero is you can automatically pull open-source PDFs.
+
+### Right Click Citation → *Find Available PDF*
+
+Right-click a reference and select *Find Available PDF*. Note this only works if your citation includes a URL or a DOI. 
+
+### Institutional Proxies
+
+You can also pull PDFs from your institution library if you [Set up a Proxy](https://www.zotero.org/support/connector_preferences#proxies). This will have you login to your institution, and then it will automatically pull PDFs through your online library.
+
+
+## Zotero Connectors: Capturing references from the web browser
+
+The [Zotero web browser extensions/connectors](https://www.zotero.org/download/connectors) is useful while browsing the internet to quickly import a reference into your library. 
+
+Click the Zotero button in the upper right corner of the browser while visiting a webpage on [PubMed](https://pubmed.ncbi.nlm.nih.gov/) or a specific [journal publication](https://onlinelibrary.wiley.com/doi/10.1111/add.16127) to load the bibliographic citation data into Zotero. 
+
+This also works on popular websites like [Google Books](https://www.google.com/books/edition/_/PoclDwAAQBAJ) and [Amazon](https://a.co/d/f2DBdAt).
+
+
+## Zotero MS Word Plugin: In-text citations 
 
 The [Zotero MS Word plugin](https://www.zotero.org/support/word_processor_integration) is useful for inserting citations throughout a Word document and automatically creating a bibliography at the end of the manuscript. 
 
-[Better BibTeX](https://retorque.re/zotero-better-bibtex/) is an extension for Zotero (and Juris-M) that makes it easier to manage bibliographic data and share a large number of manuscripts with collaborators. Files with .bib extensions can be obtained from Zotero by exporting a group of manuscripts, sharing the .bib file with collaborators, and they can import the references into their personal Zotero libraries. I have included two examples of these .bib files on [Zotero](https://github.com/dgrisafe/rookie-researcher/blob/main/zotero_software.bib) and [Alcohol Use Disorder](https://github.com/dgrisafe/rookie-researcher/blob/main/zotero_alcohol.bib).
+
+## Zotero Style Repository: Formatting bibliographies
+
+Zotero has a [repository of style files](https://www.zotero.org/styles) that export citations in a specific format. 
+
+All citations of interest in Zotero can be placed in a folder and exported in any format (APA, MLA, Nature, etc.).
+
+
+## Advanced Zotero Plugins
+
+These are useful to people writing in markdown editors and who are comfortable 
+
+### Better BibTeX: Unique reference tags for other software
+
+[Better BibTeX](https://retorque.re/zotero-better-bibtex/) is an extension for Zotero (and Juris-M) that makes it easier to manage bibliographic data and share a large number of manuscripts with collaborators. 
+
+Files with .bib extensions can be obtained from Zotero by exporting a group of manuscripts, sharing the .bib file with collaborators, and they can import the references into their personal Zotero libraries. 
+
+I have included two examples of these .bib files on [Zotero](https://github.com/dgrisafe/rookie-researcher/blob/main/zotero_software.bib) and [Alcohol Use Disorder](https://github.com/dgrisafe/rookie-researcher/blob/main/zotero_alcohol.bib).
+
+
+### Ilya Kashnitsky: Remote citation library and references in RMarkdown
 
 I have placed my Zotero library on my personal Dropbox server so I can read the PDFs associated with my library on the go. This is more advanced, but can be done by following [Ilya Kashnitsky's blog post](https://ikashnitsky.github.io/2019/zotero/).
+
+
+## Example Citations
 
 Below are examples of various exported bibliographies in various styles, which can be quickly modified to fit the preferences for any given journal, collaborator, assignment, etc. To do this: 
 
@@ -20,7 +67,7 @@ Below are examples of various exported bibliographies in various styles, which c
 * Paste HTML anywhere: email, website, etc.
 
 
-## References on Zotero in the MLA 9th Edition style
+### References on Zotero in the MLA 9th Edition style
 
 Heyns, Emiliano. “Better BibTeX for Zotero.” Retorquere on GitHub, https://retorque.re/zotero-better-bibtex/. Accessed 26 Jan. 2023.  
 Kashnitsky, Ilya. “Zotero Hacks: Unlimited Synced Storage and Its Smooth Use with Rmarkdown.” Ilya Kashnitsky, 14 Mar. 2019, https://ikashnitsky.github.io/2019/zotero/.  
@@ -30,7 +77,7 @@ Kashnitsky, Ilya. “Zotero Hacks: Unlimited Synced Storage and Its Smooth Use w
 Zotero | Your Personal Research Assistant. Corporation for Digital Scholarship, https://www.zotero.org/. Accessed 30 Jan. 2023.  
 
 
-## References on Alcohol Use Disorder in JAMA style
+### References on Alcohol Use Disorder in JAMA style
 
 1. Burnette EM, Grodin EN, Lim AC, MacKillop J, Karno MP, Ray LA. Association between impulsivity and neural activation to alcohol cues in heavy drinkers. Psychiatry Res Neuroimaging. 2019;293:110986. doi:10.1016/j.pscychresns.2019.110986
 2. Leach JM. Should GPs prescribe vitamin B compound strong tablets to alcoholics? Br J Gen Pract. 2017;67(656):134-135. doi:10.3399/bjgp17X689809
