@@ -9,7 +9,7 @@ More has been written on these topics than I ever could. Here are some great res
 
 [![](https://avatars.Githubusercontent.com/u/68009?v=4)](https://www.youtube.com/watch?v=eWxxfttcMts "Git for Humans – Alice Bartlett at UX Brighton 2016")
 
-Links: [Video](https://www.youtube.com/watch?v=eWxxfttcMts) - [Slides](https://speakerdeck.com/alicebartlett/Git-for-humans)
+Links: [Video](https://www.youtube.com/watch?v=eWxxfttcMts) - [Slides](https://speakerdeck.com/alicebartlett/git-for-humans)
 
 Bartlett provides a high level introduction to Git and *GitHub* aimed at a non-programmer. She explains how Git is useful for:
 
@@ -35,7 +35,7 @@ She notes that jargon in Git makes it inaccessible to new users. She provides th
 > | Pull | get commits from a remote |
 
 
-## [How to Use Git/GitHub with R](https://rfortherestofus.com/2021/02/how-to-use-Git-Github-with-r/): Dave
+## [How to Use Git/GitHub with R](https://rfortherestofus.com/2021/02/how-to-use-git-github-with-r/): Dave
 
 Getting started with Git in R has a bit of a learning curve. There are some nuts-and-bolts that must be tended to before integrating Git with R. Thankfully Dave has posted an excellent walkthrough for Git in *RStudio*. 
 
@@ -45,26 +45,26 @@ One strength of this approach is Git *commits* can be handled completely within 
 
 Within *RStudio*, Dave uses the [usethis](https://cran.r-project.org/web/packages/usethis/index.html) R package. He has an excellent blog post that I highly recommend you follow through while installing your own Git. 
 
-I created these notes for my use while helping others install Git on their personal machines. It's Dave's content in written form for quick reference when teaching. I recommend following [Dave's Video Blog](https://rfortherestofus.com/2021/02/how-to-use-Git-Github-with-r/) and ignoring my notes if you're installing Git in *RStudio* on your own.
+I created these notes for my use while helping others install Git on their personal machines. It's Dave's content in written form for quick reference when teaching. I recommend following [Dave's Video Blog](https://rfortherestofus.com/2021/02/how-to-use-git-github-with-r/) and ignoring my notes if you're installing Git in *RStudio* on your own.
 
 
 ### Installing Git
 
 On Mac Git comes installed
 
-On PC download [Git for Windows](https://Gitforwindows.org/)
+On PC download [Git for Windows](https://gitforwindows.org/)
 
 In *RStudio*, select the *Terminal* pane and type:
 
-`which Git`
+`which git`
 
 or
 
-`Git --version`
+`git --version`
 
 If Git is installed correctly it should read something like the following:
 
-`Git version 2.24.3 (Apple Git-128)` on a Mac
+`git version 2.24.3 (Apple Git-128)` on a Mac
 
 ### Configuring Git
 
@@ -78,24 +78,24 @@ Then load the package:
 
 `library(usethis)`
 
-We'll use a function in this package to edit our `.Gitconfig` file
+We'll use a function in this package to edit our `.gitconfig` file
 
-`edit_Git_config()`
+`edit_git_config()`
 
-This will open a new pane for our `.Gitconfig` file. We will edit this to set our default settings for Git. We'll assign our names and email so others can contact us on Git.
+This will open a new pane for our `.gitconfig` file. We will edit this to set our default settings for Git. We'll assign our names and email so others can contact us on Git.
 
 ```
 [filter "lfs"]
-	process = Git-lfs filter-process
+	process = git-lfs filter-process
 	required = true
-	clean = Git-lfs clean -- %f
-	smudge = Git-lfs smudge -- %f
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
 [user]
 	name = "yourGitUserName"
 	email = "yourEmailAddress@mail.com"
 ```
 
-Sometimes the `.Gitconfig` file is empty. Copy the above code into it. Ensure the spaces are correct. Enter your personal *GitHub* username (created in a later step) and an email address where you can be contacted.
+Sometimes the `.gitconfig` file is empty. Copy the above code into it. Ensure the spaces are correct. Enter your personal *GitHub* username (created in a later step) and an email address where you can be contacted.
 
 ### Initializing a Git Repository
 
@@ -103,7 +103,7 @@ In the *RStudio* dropdown menus, open *File* → *New Project*.
 
 A new window will open, select *New Directory* → *New Project*.
 
-Give your project a fun name like `learning-Github`.
+Give your project a fun name like `learning-github`.
 
 Choose where to create this directory. I like to go into my *Documents* folder, create a new folder *GitHub*, and save the new project here. This *GitHub* folder will be the home for all your subsequent Git *repositories* that you will *clone* to your computer. (more on *cloning* later).
 
@@ -113,9 +113,9 @@ In *RStudio* console, load the [usethis](https://cran.r-project.org/web/packages
 
 `library(usethis)`
 
-Initialize the new project (which I named `learning-Github`) with the following function:
+Initialize the new project (which I named `learning-github`) with the following function:
 
-`use_Git()`
+`use_git()`
 
 This will create some template files for Git. It will then ask you to *commit* the new files by asking *Is it ok to commit them?*, and show some numbers with possible response. Type the number that corresponds to the affirmative response. For example, if it says: 
 
@@ -129,7 +129,7 @@ For this example, indicate *Definitely* to *commit* these new files by typing af
 
 `1`
 
-It will then prompt you to restart *RStudio* to activate the *Git pane*. Similarly, type the number indicating the affirmative response. Or simply close out of *RStudio* and reopen it.
+It will then prompt you to restart *RStudio* to activate the *Git* pane. Similarly, type the number indicating the affirmative response. Or simply close out of *RStudio* and reopen it.
 
 After restarting *RStudio*, look in the pane that has *Environment*, *History*, *Connections*, *Tutorial*. 
 
@@ -165,7 +165,7 @@ Add a single line of code to this new script:
 
 `library(tidyverse)`
 
-Now save the file with a unique name, say `test.R`. The save location should default to our repository folder `learning-Github`. Click the *Save* button.
+Now save the file with a unique name, say `test.R`. The save location should default to our repository folder `learning-github`. Click the *Save* button.
 
 If we look at the *Git* pane in the bottom row, we'll see an empty check box under *Staged*, a yellow *? ?* under *Status*, and the name of the file *test.R* under *Path*.
 
@@ -233,7 +233,7 @@ Load the [usethis](https://cran.r-project.org/web/packages/usethis/index.html) p
 
 Call the function to generate a new *GitHub* token
 
-`create_Github_token()`
+`create_github_token()`
 
 This will open a new internet browser window (Firefox, Chrome, Edge, etc.) on the [GitHub](https://Github.com/) website.
 
@@ -252,15 +252,15 @@ If anyone gets a copy of this personal access token they can edit anything on yo
 
 #### Storing Personal Access Token to Connect *RStudio* and *GitHub*
 
-We'll use the [Gitcreds](https://cran.r-project.org/web/packages/Gitcreds/index.html) package to save the token credential in *RStudio*.
+We'll use the [gitcreds](https://cran.r-project.org/web/packages/gitcreds/index.html) package to save the token credential in *RStudio*.
 
 In the *RStudio* console, type:
 
-`library(Gitcreds)`
+`library(gitcreds)`
 
 Run the function:
 
-`Gitcreds_set()`
+`gitcreds_set()`
 
 It will ask you to enter your token.
 
@@ -278,9 +278,9 @@ We can start by assigning a project to a repository, or the other way around.
 
 `library(usethis)`
 
-`use_Github()`
+`use_github()`
 
-Go to [GitHub.com](https://Github.com/) and see your *RStudio* project is not a separate repository on *GitHub*
+Go to [GitHub.com](https://github.com/) and see your *RStudio* project is not a separate repository on *GitHub*
 
 ##### *GitHub* First
 
@@ -330,4 +330,4 @@ You have now connected *RStudio* and *GitHub* and your have the basics down to c
   
 ## Further Reading
 
-1. Hester, Jenny Bryan, the STAT 545 TAs, Jim. Let’s Git Started | Happy Git and GitHub for the UseR. happyGitwithr.com, https://happyGitwithr.com/. Accessed 30 Jan. 2023.
+1. Hester, Jenny Bryan, the STAT 545 TAs, Jim. Let’s Git Started | Happy Git and GitHub for the UseR. happygitwithr.com, https://happygitwithr.com/. Accessed 30 Jan. 2023.
