@@ -41,9 +41,9 @@ Getting started with Git in R has a bit of a learning curve. There are some nuts
 
 One strength of this approach is Git *commits* can be handled completely within *RStudio*; there is no need to use *GitHub Desktop* or other applications that must be downloaded.
 
-Within *RStudio*, Dave uses the [usethis](https://cran.r-project.org/web/packages/usethis/index.html) R package. He has an excellent blog post that I highly recommend you follow through while installing your own Git. 
+Within *RStudio*, Dave uses the [usethis](https://cran.r-project.org/web/packages/usethis/index.html) R package.
 
-I created these notes for my use while helping others install Git on their personal machines. It's Dave's content in written form for quick reference when teaching. I recommend following [Dave's Video Blog](https://rfortherestofus.com/2021/02/how-to-use-git-github-with-r/) and ignoring my notes if you're installing Git in *RStudio* on your own.
+I created these notes for my use while helping others install Git on their personal machines. It's Dave's content in written form for quick reference when teaching. I recommend following [Dave's Excellent Video Blog](https://rfortherestofus.com/2021/02/how-to-use-git-github-with-r/) and ignoring my notes if you're installing Git in *RStudio* on your own.
 
 
 ### Installing Git
