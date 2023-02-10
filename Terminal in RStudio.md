@@ -20,4 +20,4 @@ In the *Options* window, select the *Terminal* tab.
 
 Select the dropdown menu for *Bash* and change it to *Zsh*
 
-![](RStudio Terminal Zsh Default)
+![](https://github.com/dgrisafe/rookie-researcher/blob/main/media/RStudio%20Terminal%20Zsh%20Default.jpg)

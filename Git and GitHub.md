@@ -405,7 +405,7 @@ More advanced Git commands can be performed directly within the [Terminal](https
 
 [Git Cheat Sheet](https://about.gitlab.com/images/press/git-cheat-sheet.pdf) provides a list of Git commmands in the [Terminal](https://github.com/dgrisafe/rookie-researcher/blob/main/Terminal%20in%20RStudio.md).
 
-Further explanation of this advanced skill is available on the [GitLab Documentatino Blog](https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html)
+Further explanation of this advanced skill is available on the [GitLab Documentation Blog](https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html)
 
 
 ## Further Reading
