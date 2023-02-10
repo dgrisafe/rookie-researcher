@@ -54,11 +54,15 @@ On PC download [Git for Windows](https://gitforwindows.org/)
 
 In *RStudio*, select the *Terminal* pane and type:
 
-`which git`
+```
+which git
+```
 
 or
 
-`git --version`
+```
+git --version
+```
 
 If Git is installed correctly it should read something like the following:
 
@@ -70,15 +74,21 @@ We'll install and use the [usethis](https://cran.r-project.org/web/packages/uset
 
 In *RStudio*, select the *Console* pane and type:
 
-`library.install("usethis")`
+```
+library.install("usethis")
+```
 
 Then load the package:
 
-`library(usethis)`
+```
+library(usethis)
+```
 
 We'll use a function in this package to edit our `.gitconfig` file
 
-`edit_git_config()`
+```
+edit_git_config()
+```
 
 This will open a new pane for our `.gitconfig` file. We will edit this to set our default settings for Git. We'll assign our names and email so others can contact us on Git.
 
@@ -97,25 +107,33 @@ Sometimes the `.gitconfig` file is empty. Copy the above code into it. Ensure th
 
 ### Initializing a Git Repository
 
-In the *RStudio* dropdown menus, open *File* → *New Project*.
+In the *RStudio* dropdown menus, open *File → New Project*.
 
-A new window will open, select *New Directory* → *New Project*.
+A new window will open, select *New Directory → New Project*.
 
 Give your project a fun name like `learning-github`.
 
-Choose where to create this directory. I like to go into my *Documents* folder, create a new folder *GitHub*, and save the new project here. This *GitHub* folder will be the home for all your subsequent Git *repositories* that you will *clone* to your computer. (more on *cloning* later).
+Choose where to create this directory. In the *Documents* folder I like to create a new folder *GitHub* where I save the new project. This *GitHub* folder will be the home for all subsequent Git *repositories* that I *clone* from *GitHub* to my computer. 
 
-Before clicking the button *Create Project*, you can click the box *Create a Git repository*. Or you can leave this box unchecked and do the following manual process...
+Before clicking the button *Create Project*, click the box *Create a Git repository*. Or leave this box unchecked and do the following manual process...
 
 In *RStudio* console, load the [usethis](https://cran.r-project.org/web/packages/usethis/index.html) package again:
 
-`library(usethis)`
+```
+library(usethis)
+```
 
 Initialize the new project (which I named `learning-github`) with the following function:
 
-`use_git()`
+```
+use_git()
+```
 
-This will create some template files for Git. It will then ask you to *commit* the new files by asking *Is it ok to commit them?*, and show some numbers with possible response. Type the number that corresponds to the affirmative response. For example, if it says: 
+This will create some template files for Git. It will then ask to *commit* the new files by asking 
+
+*Is it ok to commit them?*
+
+and show some numbers with possible response. Type the number that corresponds to the affirmative response. For example, if it says: 
 
 *1: Definitely*  
 *2: Not Now*  
@@ -123,29 +141,27 @@ This will create some template files for Git. It will then ask you to *commit* t
 
 *Selection: *
 
-For this example, indicate *Definitely* to *commit* these new files by typing after *Selection: * 
+...then type `1` to indicate *Definitely* and *commit* these new files.
 
-`1`
-
-It will then prompt you to restart *RStudio* to activate the *Git* pane. Similarly, type the number indicating the affirmative response. Or simply close out of *RStudio* and reopen it.
+It will then prompt to restart *RStudio* to activate the *Git* pane. Similarly, type the number indicating the affirmative response. Or simply close out of *RStudio* and reopen it.
 
 After restarting *RStudio*, look in the pane that has *Environment*, *History*, *Connections*, *Tutorial*. 
 
-You should now notice a *Git* pane between Connections and Tutorial.
+There should now be a *Git* pane between Connections and Tutorial.
 
 Great work so far!
 
 ### Viewing *Commit* History
 
-This step is just for your understanding; there's no code to type in this step to view your Git history.
+This step is just for understanding; there's no code to type for a moment.
 
-In the *Git* pane, look for the button with a clock emoji followed by *History*. Note, if the window is very small the text disappears and you only see the clock emoji.
+In the *Git* pane, look for the button with a clock emoji followed by *History*. Note, if the window is very small the text disappears and only the clock emoji is visible.
 
-This will open a new window that shows the Git history for this specific project. Note, if this is a new project, the history should be short. 
+This will open a new window that shows the Git *History* for this specific project. 
 
-As you commit more and more, the history will grow. 
+Note, if this is a new project, the history should be short; the history will grow as more commits are made. 
 
-You can review any stage of a project in this pane.
+Review any stage of a project in this *History* pane.
 
 ### Making a *Commit* and Viewing More History
 
@@ -161,7 +177,9 @@ This will create a new pane called *Untitled1.R*.
 
 Add a single line of code to this new script:
 
-`library(tidyverse)`
+```
+library(tidyverse)
+```
 
 Now save the file with a unique name, say `test.R`. The save location should default to our repository folder `learning-github`. Click the *Save* button.
 
@@ -173,43 +191,80 @@ A new window will open titled *RStudio: Review Changes*.
 
 The top left pane will have the name of the file we just created *test.R*.
 
-The top right pane will say *Commit Message* with an empty box to type a name describing this commit we are creating. Type a message to a human explaining what your new code does. For example, we might type *Created .R script to show test changes in Git.* This will likely be a message to your future self when looking back at your work and trying to remember what you were doing. This is the time traveling element of Git!
+##### Commit Changes: Green for Added Code
 
-The bottom pane should be the full width of the window. It shows the changes we've done in this commit compared to the last. In this instance we are creating a new file and adding a new line of code, so all changes should be highlighted in green.
+The bottom pane should be the full width of the window. 
 
-Click the *Commit* button. You made your first commit!
+It shows the changes we've done in this commit compared to the last. 
 
-A new status window will open, close it.
+In this instance we are creating a new file and adding a new line of code, so all changes should be highlighted in green.
 
-Now in the *Commit* window, in the upper left corner, you can select the *History* button to see all past changes to this project.
+##### *Commit Message*: Writing Love Letters to your Future Self
+
+The top right pane will say *Commit Message* with an empty box to type a name describing this commit we are creating. 
+
+Type a message to a human explaining what your new code does. For example, we might type *Created .R script to show test changes in Git.* 
+
+It's important this message is in your own words because it will likely be a message to your future self when looking back at your work and trying to remember what you were doing. 
+
+This is the time traveling element of Git!
+
+Click the *Commit* button. A new status window will open, close it. You made your first commit!
+
+In the *Commit* window look in the upper left corner for the *History* button 
+
+Select *History* to see all past changes to this project.
 
 #### Your Second Commit
 
 Now close the *Commit* window and return to our file *test.R*. 
 
-Delete the first line we made:
-
-Delete: `library(tidyverse)`
+Delete the first line we made before the last commit: `library(tidyverse)`
 
 And add a new line: 
 
-`library(janitor)`
+```
+library(janitor)
+```
 
 Save our file *test.R*.
  
-Now we can return to the *Git* pane. Notice the bottom row will be similar to how it was after our first commit, but now under *Status* instead of the yellow *?* marks it should now have blue *M* symbols.
+Now we can return to the *Git* pane. 
+
+Notice the bottom row is similar to how it was before the first commit, but under *Status* it should now have blue *M* symbols instead of the yellow *?* marks.
 
 Check the *Staged* box and click the *Commit* button above to reopen the window *RStudio: Review Changes*.
 
-Notice, there should be a line highlighted in red for `library(tidyverse)` and below it a line highlighted in green for `library(janitor)`. The red corresponds to deleted code, and the green to added code.
+##### Commit Changes: Green for Added, Red for Deleted Code
 
-Write a new message in the upper right *Commit Message* window, say something like *Removed tidyverse package, added Janitor package*. 
+Notice, there should be a line highlighted in red for `library(tidyverse)` and below it a line highlighted in green for `library(janitor)`. 
+
+The red corresponds to deleted code, and the green to added code.
+
+##### *Commit Message*: Writing Another Love Letter to your Future Self
+
+Write a new message in the upper right *Commit Message* window
+
+Say something like *Removed tidyverse package, added Janitor package*. 
+
+Make sure it's in your own words.
 
 Again, click the *Commit* button. You made your second commit!
 
-This is how we progress through a project and save it by committing it. Commits are like little checkpoints throughout development.
+Again look in the *Commit* window. 
 
-But we have not yet uploaded with Git online. We've been saving the project to our local machine. 
+In the upper left corner, you can select the *History* button to see all past changes to this project.
+
+#### Now You've Got It!
+
+This is how we progress through a project and save it by committing it. 
+
+Commits are like little checkpoints throughout development.
+
+But we've only been saving the project to our local machine. 
+
+We have not yet uploaded online to *GitHub*.
+
 
 ### Connecting *RStudio* and *GitHub*
 
@@ -227,11 +282,15 @@ This is how *RStudio* communicates with *GitHub*.
 
 Load the [usethis](https://cran.r-project.org/web/packages/usethis/index.html) package:
 
-`library(usethis)`
+```
+library(usethis)
+```
 
 Call the function to generate a new *GitHub* token
 
-`create_github_token()`
+```
+create_github_token()
+```
 
 This will open a new internet browser window (Firefox, Chrome, Edge, etc.) on the [GitHub](https://Github.com/) website.
 
@@ -254,11 +313,15 @@ We'll use the [gitcreds](https://cran.r-project.org/web/packages/gitcreds/index.
 
 In the *RStudio* console, type:
 
-`library(gitcreds)`
+```
+library(gitcreds)
+```
 
 Run the function:
 
-`gitcreds_set()`
+```
+gitcreds_set()
+```
 
 It will ask you to enter your token.
 
@@ -274,9 +337,13 @@ We can start by assigning a project to a repository, or the other way around.
 
 ##### *RStudio* First
 
-`library(usethis)`
+```
+library(usethis)
+```
 
-`use_github()`
+```
+use_github()
+```
 
 Go to [GitHub.com](https://github.com/) and see your *RStudio* project is not a separate repository on *GitHub*
 
@@ -304,7 +371,10 @@ Notice in *RStudio* the project should be opened in the upper right corner, titl
 
 ### General Workflow
 
-This is the same as we did earlier with out commits, but now we need to communicate between *RStudio* and *GitHub* by *Pushing* and vice versa by *Pulling*
+This is the same as we did earlier with out commits, but now we need to communicate by:
+
+* *Pushing* from *RStudio* to *GitHub* 
+* *Pulling* from *GitHub* to *RStudio* 
 
 #### *Push*
 
@@ -314,9 +384,11 @@ Open the repository on *GitHub*, and you'll see the changes you made on your loc
 
 #### *Pull*
 
-Imagine you did some work on a computer at work, which you pushed to *GitHub* before heading home. 
+Imagine you wrote some code on a computer at work, which you pushed to *GitHub* before leaving the office and heading home. 
 
-The next day, however, you're working from home on the same repository. You can *Pull* the changes you made yesterday at work to your home computer by opening the project on your local machine and clicking *Pull*. 
+The next day, however, you're working from home on the same repository. 
+
+You can *Pull* the changes you made yesterday at work to your home computer by opening the project on your local machine and clicking *Pull*. 
 
 The changes you made yesterday at work will now be reflected today at home.
 
