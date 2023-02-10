@@ -52,7 +52,7 @@ On Mac Git comes installed
 
 On PC download [Git for Windows](https://gitforwindows.org/)
 
-In *RStudio*, select the *Terminal* pane and type:
+In *RStudio*, select the [Terminal](https://github.com/dgrisafe/rookie-researcher/blob/main/Terminal%20in%20RStudio.md) pane and type:
 
 ```
 which git
@@ -398,6 +398,16 @@ The synonymous situation is multiple people are working on the same project repo
 
 You have now connected *RStudio* and *GitHub* and your have the basics down to continue with Git!
   
+  
+## Git in the [Terminal](https://github.com/dgrisafe/rookie-researcher/blob/main/Terminal%20in%20RStudio.md)
+
+More advanced Git commands can be performed directly within the [Terminal](https://github.com/dgrisafe/rookie-researcher/blob/main/Terminal%20in%20RStudio.md).
+
+[Git Cheat Sheet](https://about.gitlab.com/images/press/git-cheat-sheet.pdf) provides a list of Git commmands in the [Terminal](https://github.com/dgrisafe/rookie-researcher/blob/main/Terminal%20in%20RStudio.md).
+
+Further explanation of this advanced skill is available on the [GitLab Documentatino Blog](https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html)
+
+
 ## Further Reading
 
 1. Hester, Jenny Bryan, the STAT 545 TAs, Jim. Let’s Git Started | Happy Git and GitHub for the UseR. happygitwithr.com, https://happygitwithr.com/. Accessed 30 Jan. 2023.
