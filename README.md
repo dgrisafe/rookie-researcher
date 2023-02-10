@@ -25,6 +25,7 @@ Introductory skills for clinical research
 
 * [Data Science Workflow](https://github.com/dgrisafe/rookie-researcher/blob/main/Data%20Science%20Workflow.md)
 * [Git and GitHub](https://github.com/dgrisafe/rookie-researcher/blob/main/Git%20and%20GitHub.md)
+* [Terminal in RStudio](https://github.com/dgrisafe/rookie-researcher/blob/main/Terminal%20in%20RStudio.md)
 
 ### R Programming and Analysis
 
