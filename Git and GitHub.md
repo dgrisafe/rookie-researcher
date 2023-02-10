@@ -1,13 +1,4 @@
----
-title: "Git and GitHub"
-author: "Dom Grisafe"
-date: "2023-02-09"
-output: 
-  rmarkdown::github_document:
-    toc: true
-    toc_depth: 3
----
-
+# Git and GitHub
 
 Git and *GitHub* are used often in programming.
 
