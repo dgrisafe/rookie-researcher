@@ -27,9 +27,13 @@ Introductory skills for clinical research
 * [Git and GitHub](https://github.com/dgrisafe/rookie-researcher/blob/main/Git%20and%20GitHub.md)
 * [Terminal in RStudio](https://github.com/dgrisafe/rookie-researcher/blob/main/Terminal%20in%20RStudio.md)
 
-### R Programming and Analysis
+### R Programming
 
 * [Rmd Cheatsheet](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)
 * [Outbreak Wrangling](https://github.com/dgrisafe/outbreak_wrangling)
+* [Debugging in R](https://adv-r.hadley.nz/debugging.html)
+
+### Analysis Methods
+
 * Missing data: multiple imputation with chained equations (MICE)
 
