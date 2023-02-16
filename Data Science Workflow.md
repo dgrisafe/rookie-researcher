@@ -143,6 +143,8 @@ output:
     toc: TRUE
     toc_float: TRUE
     toc_depth: 2
+csl: style.csl
+bibliography: references.bib
 ```
 
 ### `data_wrangling.Rmd`
