@@ -38,6 +38,11 @@ Zotero has a [repository of style files](https://www.zotero.org/styles) that exp
 
 All citations of interest in Zotero can be placed in a folder and exported in any format (APA, MLA, Nature, etc.).
 
+## R Markdown Integration
+
+Use the YAML header in a `.Rmd` file to connect a style file (.csl) with a list of BibTeX references (.bib).
+
+Detailed instructions are available in the [YAML Headers in Rmd](https://github.com/dgrisafe/rookie-researcher/blob/main/Data%20Science%20Workflow.md#yaml-headers-in-rmd) section of my Data Science Workflow.
 
 ## Advanced Zotero Plugins
 
