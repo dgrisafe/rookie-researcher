@@ -143,9 +143,35 @@ output:
     toc: TRUE
     toc_float: TRUE
     toc_depth: 2
-csl: style.csl
+csl: chicago-note-bibliography.csl
 bibliography: references.bib
 ```
+
+#### Referencing in R Markdown with Styles (.csl) and BibTeX (.bib)
+
+Make sure the names in the last two lines of the YAML header above match the file names of the `.csl` and `.bib` files that we'll save in the folder [`1 Programs`](https://github.com/dgrisafe/rookie-researcher/blob/main/Data%20Science%20Workflow.md#1-programs).
+
+##### Styles (.csl)
+
+Download a .csl file from the [Zotero Style Repository](https://github.com/dgrisafe/rookie-researcher/blob/main/Zotero%20%7C%20Citation%20Management%20Recommendations.md#zotero-style-repository-formatting-bibliographies) by *Right Clicking* and *Save Link As...*.
+
+For example the [Chicago Manual of Style 17th edition (note)](https://www.zotero.org/styles/chicago-note-bibliography).
+
+Place this `.csl` file in the folder [`1 Programs`](https://github.com/dgrisafe/rookie-researcher/blob/main/Data%20Science%20Workflow.md#1-programs)
+
+##### BibTeX (.bib)
+
+In Zotero, create a folder with all the references for a project. 
+
+Highlight all references, right click, export items as BibTeX file.
+
+Save this `.bib` file to the folder [`1 Programs`](https://github.com/dgrisafe/rookie-researcher/blob/main/Data%20Science%20Workflow.md#1-programs).
+
+To find the key for each reference, open the `.bib` file in a text editor. 
+
+In the `.bib` file, the key is the first line of each section, between the open bracket `{` and the comma `,`: `@article{authorLastName_titleFirstWord_Year,`
+
+Throughout the `.Rmd` document, call a unique reference by typing `[@`, the specific key, `]`: `[@authorLastName_titleFirstWord_Year]` 
 
 ### `data_wrangling.Rmd`
 
