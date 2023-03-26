@@ -1,10 +1,13 @@
+*.Rproj
 .Rproj.user
-rookie-researcher.Rproj
 .Rhistory
 .Rapp.history
-.RData
-.Ruserdata
 .Rdata
+.Ruserdata
 .httr-oauth
 .DS_Store
+*.pdf
 *.html
+*.csv
+*.xlsx
+*.xls
