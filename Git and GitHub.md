@@ -151,6 +151,12 @@ There should now be a *Git* pane between Connections and Tutorial.
 
 Great work so far!
 
+### Git Ignore
+
+`.gitignore` is a hidden file that tells Git to ignore specific files from being committed.
+
+I use this standard [`.gitignore` file](https://github.com/dgrisafe/rookie-researcher/blob/main/.gitignore) to prevent myself from uploading sensitive reports or data to Git.
+
 ### Viewing *Commit* History
 
 This step is just for understanding; there's no code to type for a moment.
