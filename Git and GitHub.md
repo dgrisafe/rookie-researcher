@@ -75,7 +75,7 @@ We'll install and use the [usethis](https://cran.r-project.org/web/packages/uset
 In *RStudio*, select the *Console* pane and type:
 
 ```
-library.install("usethis")
+install.packages("usethis")
 ```
 
 Then load the package:
